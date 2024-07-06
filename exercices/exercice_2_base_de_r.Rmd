@@ -1,0 +1,26 @@
+---
+title: "**Exercice 2: Bases de R**"
+author: "Par Stanislas Mahussi GANDAHO"
+date: "`r Sys.Date()`"
+output: pdf_document
+font-size: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### 1. Boucles
+a) Utilisez une boucle `repeat` pour créer un programme qui demande à l'utilisateur de deviner un nombre secret (par exemple, 1 à 5). Le programme continue à demander jusqu'à ce que l'utilisateur trouve le nombre correct. Affichez un message de félicitations ("Bravo, vous avez su deviner") lorsque le nombre est trouvé.
+
+b) Écrivez une fonction calculate_sum qui prend deux paramètres (a et b) et retourne la somme de a et b. Utilisez une boucle while pour permettre à l'utilisateur de continuer à saisir des paires de nombres à ajouter jusqu'à ce qu'ils décident de ne plus continuer.
+
+### 2. Fonctions et Conditions
+a) Définissez une fonction check_prime qui prend un nombre entier positif comme argument et retourne TRUE si le nombre est premier, sinon FALSE. Utilisez cette fonction pour imprimer tous les nombres premiers jusqu'à 50 en utilisant une boucle for.
+
+b) Créez une fonction calculate_discount qui calcule un rabais en pourcentage sur un montant total en fonction de la catégorie de produit. Utilisez une liste pour stocker différentes catégories de produits et leur taux de réduction associé. Demandez à l'utilisateur de saisir le montant total et la catégorie du produit, puis utilisez la fonction pour calculer et afficher le montant après réduction.
+
+### 3. Conditions
+a) Écrivez un programme qui demande à l'utilisateur de saisir une lettre. Si la lettre est une voyelle (a, e, i, o, u), imprimez "C'est une voyelle". Sinon, imprimez "C'est une consonne".
+
+b) Modifiez la fonction `request_bmi_para` que vous avez déjà créée pour inclure une vérification de la validité de l'entrée de l'utilisateur. Assurez-vous que le poids et la taille saisis sont des valeurs numériques positives. Si l'utilisateur saisit une valeur incorrecte, demandez-lui de saisir à nouveau jusqu'à ce que des valeurs valides soient fournies.

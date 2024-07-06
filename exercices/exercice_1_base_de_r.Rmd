@@ -1,0 +1,47 @@
+---
+title: '**Exercice 1: Bases de R**'
+author: "Par Stanislas Mahussi GANDAHO"
+date: "`r Sys.Date()`"
+output: pdf_document
+fontsize: 12pt
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Cet exercice permet de mettre en pratique plusieurs aspects de R, de la création de structures de données de base à l'utilisation de fonctions intégrées pour le calcul statistique et l'utilisation d'instructions conditionnelles pour le contrôle du flux.
+
+### 1. Création de vecteurs et de listes
+
+a) Créez un vecteur nommé `temperatures` contenant les valeurs suivantes : 22, 25, 21, 24, 20.    
+
+
+d) Créez une liste appelée `my_list` contenant deux éléments :
+   - Le vecteur `temperatures` mis à jour à partir de la réponse à la question précédente.
+   - Un vecteur de noms de jours de la semaine : "Monday", "Tuesday", "Wednesday", "Thursday", "Friday".
+
+### 2. Data frames et Statistiques basiques
+
+a) Créez un data frame nommé `student_data` avec les colonnes suivantes :
+   - `student_id` : 1, 2, 3, 4, 5
+   - `age` : 22, 25, 21, 24, 20
+   - `gender` : "M", "F", "M", "F", "M"
+
+b) Ajoutez une colonne `grade` à `student_data` contenant les valeurs : "A", "B", "C", "A", "B".
+
+c) Calculez la moyenne, la médiane le minimum, le maximum, la variance, et l'écart-type d'âge des étudiants à partir de `student_data`.
+
+
+#### 4. Instructions conditionnelles
+
+Considérons ces valeurs de température: 24.2, 23.3, NA, 18.8, 19.1, 22.5, NA, 23.6.  
+
+a) Écrivez une instruction `if` qui imprime **"Les températures sont élevées"** si la température maximale dans `temperatures` est supérieure à la moyenne, sinon imprimez **"Les températures sont modérées"**.
+
+b) Utilisez `ifelse` pour créer un nouveau vecteur `temperature_status` qui contient **"Élevée"** si la température correspondante dans `temperatures` est supérieure à la moyenne, sinon **"Modérée"**.  
+
+
+
